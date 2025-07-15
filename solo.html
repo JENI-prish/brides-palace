@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color:bisque;
+      color: #333;
+    }
+
+    header {
+      color: black;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .hero {
+      background: url('lel.jpeg') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(251, 251, 251);
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #0d041b;
+    }
+
+    .product-grid {
+        
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 100px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 50px;
+      transition: transform 0.3s ease;
+      padding-bottom: 5px;
+      
+    }
+
+    .product-card:hover {
+      
+      transform: scale(1.05);
+  animation: animation1 2s infinite;
+    }
+
+    .product-card img {
+     width: 100%;
+  height: 450px; /* ⬆️ Made image taller */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+    }
+    
+
+    .product-card h3 {
+      margin: 15px 0 6px;
+      font-size: 18px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .rating {
+      margin: 10px 0;
+      color: black;
+      font-size: 18px;
+    }
+
+    .card-btn {
+     padding: 9px 18px;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 14px;
+    }
+
+    .card-btn:hover {
+     
+    background-color: #4500b5;
+  transform: scale(1.05);
+}
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    @keyframes animation1 {
+  0% {
+    transition: 2s;
+    
+  }
+  50% {
+    transition: 2s;
+   
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Designer Wear Collections</h1>
+  </header>
+
+  <div class="hero">
+   
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">DESIGNER SAREES</h2>
+
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://www.studio149fashion.com/cdn/shop/files/ATHUL-1-1.jpg?v=1714812817" alt="Designer Dress 1">
+        <h3>Elegant Gown</h3>
+        <p>Silk, Handcrafted</p>
+        <div class="rating">4.7⭐|567</div>
+        <button class="card-btn">Buy Now 🛒</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://www.anantexports.in/cdn/shop/files/IMG-20240503_165311.jpg?v=1714735548&width=1946" alt="Designer Dress 2">
+        <h3>Evening Kurti</h3>
+        <p>Modern, Trendy</p>
+        <div class="rating">3.8⭐|478</div>
+        <button class="card-btn">Buy Now 🛒</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://images.sareeswholesale.com/Morpeach-Zari-Work-Pure-Viscose-Dola-Silk-Saree-197070.jpg" alt="Designer Dress 3">
+        <h3>Classic Saree</h3>
+        <p>Banarasi Collection</p>
+        <div class="rating">4.6⭐|743</div>
+        <button class="card-btn">Buy Now 🛒</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.kollybollyethnics.com/image/catalog/data/24Oct2023/Rani-Dola-Silk-Wedding-Wear-Embroidery-Work-Saree-MAHARANI-188.jpg" alt="Designer Dress 2">
+        <h3>Evening Kurti</h3>
+        <p>Modern, Trendy</p>
+        <div class="rating">5⭐|3432</div>
+        <button class="card-btn">Buy Now 🛒</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.abirabybeena.com/cdn/shop/files/IMG-20240523-WA0045.jpg?v=1735908572" alt="Designer Dress 3">
+        <h3>Classic Saree</h3>
+        <p>Banarasi Collection</p>
+        <div class="rating">4.3⭐|5623</div>
+        <button class="card-btn">Buy Now 🛒</button>
+      </div>
+      <div class="product-card">
+        <img src="https://narayanisilks.in/cdn/shop/files/SA-MA-H12674063-SEGR-FL-3_c240217d-aa8c-4a1f-9c46-fa089ed0fd8e.jpg?v=1732010980&width=1200" alt="Designer Dress 1">
+        <h3>Elegant Gown</h3>
+        <p>Silk, Handcrafted</p>
+        <div class="rating">5⭐|1046</div>
+        <button class="card-btn">Buy Now 🛒</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Designer Collections. All rights reserved.
+  </footer>
+</body>
+</html>

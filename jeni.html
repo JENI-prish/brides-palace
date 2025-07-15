@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <title>Product Grid Fixed</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: beige;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1{
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #headname {
+      text-align: center;
+      color: black;
+      margin: 40px 0 20px;
+    }
+
+    /* ✅ Grid for 5xN layout */
+    #product-container {
+     display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px; /* or reduce to 30px if needed */
+  padding: 50px;
+  max-width: 1600px; /* optional: increase if you want */
+  margin: auto;
+    }
+
+    .product-card {
+      background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+  height: 380px;
+  width: 210px; 
+  
+    }
+
+    .product-card:hover {
+  transform: scale(1.05);
+  animation: animation1 2s infinite;
+}
+
+
+    .product-card img {
+    width: 100%;
+  height: 250px; /* ⬆️ Made image taller */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+    }
+
+    .product-card h4 {
+      margin: 8px 0 3px; /* ⬇️ Reduce text space */
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+    }
+
+    .product-card p {
+     /* ⬇️ Less bottom space */
+  font-size: 15px;
+  color:black;
+
+      
+    }
+
+    @media (max-width: 1000px) {
+      #product-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      #product-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @keyframes animation1 {
+  0% {
+    transition: 2s;
+    box-shadow: 0px 0px 50px rgba(130, 26, 228, 0.847);
+  }
+  50% {
+    transition: 2s;
+    box-shadow: 5px 5px 30px blueviolet;
+  }
+}
+.card-btn {
+  padding: 9px 18px;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 14px;
+}
+
+.card-btn:hover {
+  background-color: #4500b5;
+  transform: scale(1.05);
+}
+.rating {
+  color: black;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1 id="headname">OUR COLLECTION</h1>
+
+  <div id="product-container">
+    <!-- 🔁 Repeatable Product Cards -->
+    <div class="product-card">
+      <img src="https://anushil.in/cdn/shop/products/DSC02259_s.jpg?v=1667708054&width=1946" alt="Product 1">
+      <h4>Mint Charm Kurtha</h4>
+      <p>$200</p><div class="rating">2.7⭐|500</div>
+      <button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/736x/99/a0/5e/99a05e95609b7043100f17013a652e09.jpg" alt="Product 2">
+      <h4>White Breeze set</h4>
+      <p>$250</p><div class="rating">4.7⭐|400</div>
+      <button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://www.bhamadesigns.com/cdn/shop/files/2779-0212_4_af41e753-5775-456b-bf02-cae4d6105763.jpg?v=1748542305" alt="Product 3">
+      <h4>Mustard Block Kurthi</h4>
+      <p>$450</p><div class="rating">5.0⭐|900</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://www.bhamadesigns.com/cdn/shop/files/WhatsApp_Image_2025-03-20_at_2.12.48_PM.jpg?v=1748542156" alt="Product 4">
+      <h4>Crimson Touch Kurtha </h4>
+      <p>$300</p><div class="rating">4.7⭐|600</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://www.saugatonline.com/products_image/8f1e9f56fe8c6257f09a7c24fccd00d4.jpg" alt="Product 5">
+      <h4>Teal Flow Kurtha</h4>
+      <p>$200</p><div class="rating">5⭐|800</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+    
+    <!-- Row 2 -->
+    <div class="product-card">
+      <img src="https://assets.ajio.com/medias/sys_master/root/20250131/EMl5/679bd505bc78b543a90cb7c7/-473Wx593H-701120982-violet-MODEL.jpg" alt="Product 6">
+      <h4>Violet Gracewear</h4>
+      <p>$400</p><div class="rating">4.7⭐|900</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyi-2YbEMfV1n2T22joWOqa1BJ_xjwDTn6oYPha5LHqeTukZhpERv_4EvWVmwIkQCPLY&usqp=CAU" alt="Product 7">
+      <h4>Golden Zari Kurthi</h4>
+      <p>$700</p><div class="rating">4.3⭐|550</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.meesho.com/images/products/464771239/jijof_512.jpg" alt="Product 8">
+      <h4>Sapphire Shine Suit</h4>
+      <p>$500</p><div class="rating">3.9⭐|650</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://ambraee.com/cdn/shop/files/Project_20240413_0038.jpg?v=1714049266&width=1080" alt="Product 9">
+      <h4>Rustic Cotton Kurtha</h4>
+      <p>$500</p><div class="rating">4.3⭐|1200</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://assets.ajio.com/medias/sys_master/root/20240607/IHs2/666263c605ac7d77bba6c012/-473Wx593H-700051995-violet-MODEL.jpg" alt="Product 10">
+      <h4>Lavendar Bloom Kurthi</h4>
+      <p>$800</p><div class="rating">5⭐|3455</div><button class="card-btn">Buy Now  🛒</button>
+    </div>
+  </div>
+
+</body>
+</html>

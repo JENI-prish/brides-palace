@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        .navbar{
+            background:transparent;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding: 15px;
+        }
+        .navdiv{
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        
+        .logo a{
+            font-size: 35px;color: white;
+        }
+        li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color:aliceblue;font-size: 18px;font-weight: bold;margin-right: 25px;
+        }
+        button{
+            background-color: black;columns: white;border-radius: 10px;margin-left: 10px;width: 90px;
+        }
+        button a{
+            color:white;font-weight: bold;font-size: 15px;
+        }
+       
+        body{
+            background-image: linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)),url(low.jpeg); 
+            background-size: cover;
+         
+        }
+        a{
+            color: azure;
+        }
+        h1{
+            color: burlywood;
+        }
+        button{
+            background-color: darkgreen;
+            padding: 10px;
+            color: white;
+        }
+        label{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"> <a href="#">Bride's palace</a></div>
+        <ul>
+        <li><a href="jeni.html">home</a></li>
+        <li><a href="suja.html">about</a></li>
+        <li><a href="kula.html">contact</a></li>
+        <li><button><a href="#">SignIn</a></button></li>
+        <li><button><a href="#">SignOut</a></button></li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <center>
+        <div class="form-container">
+        <form action="#" method="post">
+    <h1>Login Page</h1>
+    <h1>Welcome To Our Page</h1>
+    <label for="first">Username
+    <input type="text" id="first" name="first" placeholder="Enter your name"required>
+     </label><br><br>
+    <label for="Password">Password
+    <input type="password" id="password" name="password"placeholder="Enter your password"required><br><br>
+    
+    </label>
+    <button type="submit"><Label>Login</Label></button>
+        </form>
+    </div>
+    </center>
+    
+    
+</body>
+</html>

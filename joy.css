@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+}
+
+/* Slider */
+.slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.about-section .image-box img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-section .text-box {
+  max-width: 500px;
+}
+
+.about-section .text-box h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-section .text-box p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 22px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
